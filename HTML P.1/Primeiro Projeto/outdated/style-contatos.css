@@ -1,0 +1,64 @@
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+main form{
+    margin: 40px 0;
+}
+
+main label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.simple-margin{
+    margin-bottom: 20px;
+}
+
+.main-input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.input{
+    width: 40%;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.input:hover{
+    background: darkorange;
+    transform: scaleY(1.2) ;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 15px 20px;
+}
+
+td:hover, th:hover{
+    background: grey;
+    color: white;
+}

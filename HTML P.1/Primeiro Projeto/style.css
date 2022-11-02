@@ -1,0 +1,290 @@
+/*CSS Referente a pagina de Produtos*/
+header{
+    background: #BBBBBB;
+    border-bottom: 3px dashed black;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;    
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{
+    border-color: #ffaa00;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.produtos-descricao{
+    font-size: 20px;
+    height: 120px;
+}
+
+.produtos-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    vertical-align: bottom;
+}
+
+footer{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 25px 0;
+}
+
+#copy{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+/*Fim do CSS referente a pagina de Produtos*/
+
+/*CSS Referente a pagina de Contato*/
+.main-contato{
+    width: 940px;
+    margin: 0 auto;
+}
+
+main form{
+    margin: 40px 0;
+}
+
+main label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.simple-margin{
+    margin-bottom: 20px;
+}
+
+.main-input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.input{
+    width: 40%;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.input:hover{
+    background: darkorange;
+    transform: scaleY(1.2) ;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 15px 20px;
+}
+
+td:hover, th:hover{
+    background: grey;
+    color: white;
+}
+
+/*Fim do CSS da pagina de contato*/
+
+/*CSS Referente a pagina home*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner{
+    width: 100%;
+    border-bottom: 3px dashed black;
+    margin-bottom: 20px;
+}
+
+.principal, .beneficios, .mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0 2em 0;
+    padding-top: 2em;
+    clear: left;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p{
+    margin-bottom: 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa-gradient{
+    background: linear-gradient(white, #888888);
+}
+
+.mapa p{
+    text-align: center;
+    padding: 0 0 2em;
+}
+
+.principal-beneficios{
+    width: 720px;
+    margin: 0 auto;
+}
+
+.itens-beneficios{
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.itens:before{
+    content: "✧";
+}
+
+.imagembeneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px rgb(255, 255, 255);
+}
+
+.imagembeneficios:hover{
+    opacity: 0.45;
+    transform: scale(0.85);
+}
+
+.fundo-beneficios{
+    background: #888888;
+}
+
+.video{
+    width: 560px;
+    margin: 2em  auto 0;
+    padding-bottom: 2em;
+}
+
+/*Fim do CSS da pagina home*/
+
+/*Começo das Adaptações para Celular*/
+
+@media screen and (max-width: 480px){
+
+    .caixa, .principal, .mapa, .beneficios, .principal-beneficios, .video{
+        width: 100%;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .itens-beneficios, .imagembeneficios{
+        display: block;
+        width: 100%;
+    }
+    
+}
+
+/*Fim das Adaptações para Celular*/
